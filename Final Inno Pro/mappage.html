@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="contactusbtn.css">
+    <link rel="stylesheet" href="knowmorebtn.css">
+    <link rel="stylesheet" href="mappage.css">
+    <title>FitFolio - Your gym finder</title>
+</head>
+<body>
+
+
+  <header>
+    <div class="header">
+      <nav class="navigation">
+        <a href="landingpage.html" class="navbar-logo"> 
+          <img src="speed.png" width="35" height="35" alt=""> FitFolio
+          </a>
+        <div class="navbar-right">
+          <a href="landingpage.html">Home</a>
+          <a class="active" href="mappage.html">Your Map</a>
+          <a href="lookforgyms.html">Gyms</a>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+          <a href="contactus.html" class="buttonct">Contact Us</a>
+          <a target="_blank" href="https://www.google.com/maps/search/Gyms+near+you!/@22.6650837,88.3826545,15z/data=!3m1!4b1?hl=en
+          " class="buttonct">Near you!</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+        
+   
+  
+   
+
+
+  <div class="map-frame"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe> 
+   
+    <div class="map-content"> Click on the button to gain markers showing gyms near you! <br /> </div>
+    <div><a href="lookforgyms.html">
+      <button class="btn">
+        <span class="btn__inner">
+          <span class="btn__slide"></span>
+          <span class="btn__content">Know More!</span>
+        </span>
+      </button>
+    </div>
+
+
+
+<script src=
+"https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&callback=initMap&libraries=&v=weekly"
+        async>
+    </script>
+</script>
+<script src="betamappage.js"></script>
+</body>
+</html>

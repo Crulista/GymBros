@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="contactusbtn.css">
+    <link rel="stylesheet" href="knowmorebtn.css">
+    <link rel="stylesheet" href="contactus.css">
+    <title>FitFolio - Your gym finder</title>
+</head>
+<body>
+
+
+  <header>
+    <div class="header">
+      <nav class="navigation">
+        <a href="landingpage.html" class="navbar-logo"> 
+          <img src="speed.png" width="35" height="35" alt=""> FitFolio
+          </a>
+        <div class="navbar-right">
+          <a  href="landingpage.html">Home</a>
+          <a href="mappage.html">Gym Map!</a>
+          <a href="lookforgyms.html">Gyms</a>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+
+          <a href="contactus.html" class="buttonct">Contact Us</a>
+
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="background-wrap">
+    <video id="video-bg-elem" autoplay loop="loop" muted="muted"> 
+      <source src="gymhomepage.mp4" type="video/mp4">
+    </video>          
+  </div>
+
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>FitFolio Contact Form</h3>
+      <h4>Need to register your gym? </h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      
+    </form>
+  </div>
+
+<script src="landingpage.js"></script>
+</body>
+</html>

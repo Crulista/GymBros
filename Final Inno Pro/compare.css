@@ -1,0 +1,88 @@
+@media(min-width: 769px) {
+    .mobileColumnGroup {
+      display: none;
+    }
+  }
+  @media(max-width: 769px) {
+    .rowHeader, .emptyCell {
+      display: none;
+    }
+  }
+  .tableContainer {
+    margin-top: 100px;
+    overflow: auto;
+    overflow-anchor: none;
+    position: relative;
+  }
+  .tableContainer caption {
+    margin-top: 100px;
+    height: 0px;
+  }
+  thead tr {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .rowHeader, [scope="colgroup"] span {
+    margin-top: 200px;
+    left: 0;
+    position: sticky;
+  }
+
+  table {
+    margin-top: 200px;
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: auto;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    min-width: 100px;
+    max-width: 100px;
+    background: #ffffff;
+  }
+  .mobileColumnGroup th {
+      text-align: left;
+  }
+  .rowHeader {
+    text-align: left;
+  }
+  .featureCheck {
+    color: green;
+  }
+  .featureX {
+    color: red;
+  }
+  thead.stickyHeader {
+    position: fixed;
+    z-index: 999;
+    overflow-x: scroll;
+    top: 0px;
+  }
+  thead.stickyHeader.atBottom {
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    left: 0px !important;
+    top: initial;
+    width: initial !important;
+    overflow-x: clip;
+  }
+  thead::-webkit-scrollbar {
+    height: 0px;
+  }
+  .horizontal-scroller {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    overflow: auto;
+    overflow-y: hidden;
+  }
+  .horizontal-scroller-content {
+    height: 30px;
+  }
